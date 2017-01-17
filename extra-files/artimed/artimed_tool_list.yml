@@ -1,46 +1,43 @@
 tools:
-- name: featurecounter
-  owner: devteam
-  tool_panel_section_label: 'NGS Mapping'
 - name: bwa
   owner: devteam
-  tool_panel_section_label: 'NGS Mapping'
-- name: tophat2
-  owner: devteam
-  tool_panel_section_label: 'NGS Mapping'
-- name: hisat2
-  owner: iuc
-  tool_panel_section_label: 'NGS Mapping'
-- name: deseq2
-  owner: iuc
-  tool_panel_section_label: 'NGS Mapping'
-- name: samtools_flagstat
-  owner: devteam
-  tool_panel_section_label: 'NGS Mapping'
-- name: samtools_stats
-  owner: devteam
-  tool_panel_section_label: 'NGS Mapping'
-- name: samtools_sort
-  owner: devteam
-  tool_panel_section_label: 'NGS Mapping'
-- name: samtools_idxstats
-  owner: devteam
-  tool_panel_section_label: 'NGS Mapping'
-- name: data_manager_picard_index_builder
-  owner: devteam
-  tool_panel_section_label: 'Data Managers for NGS Mapping'
+  revisions:
+  - 546ada4a9f43
+  tool_panel_section_label: 'Structural Variations'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: 
+  owner: drosofff
+  revisions:
+  - b3fb23bbca8e
+  tool_panel_section_label: 'Structural Variations'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
-  tool_panel_section_label: 'Data Managers for NGS Mapping'
+  revisions:
+  - 86fa71e9b427
+  tool_panel_section_label: 'Data Managers'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: data_manager_bwa_index_builder
+  owner: devteam
+  revisions:
+  - cc5ae94acf01
+  tool_panel_section_label: 'Data Managers'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
-  tool_panel_section_label: 'Data Managers for NGS Mapping'
-- name: data_manager_bowtie2_index_builder
+  revisions:
+  - e519769cdb9c
+  tool_panel_section_label: 'Data Managers'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: data_manager_twobit_builder
   owner: devteam
-  tool_panel_section_label: 'Data Managers for NGS Mapping'
-- name: data_manager_gatk_picard_index_builder
-  owner: devteam
-  tool_panel_section_label: 'Data Managers for NGS Mapping'
+  revisions:
+  - 74b09c8e5f6e
+  tool_panel_section_label: 'Data Managers'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
-  tool_panel_section_label: 'Data Managers for NGS Mapping'
+  revisions:
+  - 2a1ac1abc3f7
+  tool_panel_section_label: 'Data Managers'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
