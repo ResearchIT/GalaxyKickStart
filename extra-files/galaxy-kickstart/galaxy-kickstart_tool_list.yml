@@ -1,5 +1,7 @@
-tools:
 - name: lumpy
   owner: drosofff
   revisions:
   - b3fb23bbca8e
+  tool_panel_section_label: 'Structural Variations'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
