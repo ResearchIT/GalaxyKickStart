@@ -1,3 +1,11 @@
+tools:
+- name: bwa
+  owner: devteam
+  revisions:
+  - 546ada4a9f43
+  tool_panel_section_label: 'Structural Variations'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+  install_resolver_dependencies: True
 - name: lumpy
   owner: drosofff
   revisions:
