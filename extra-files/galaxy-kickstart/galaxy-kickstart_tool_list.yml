@@ -2,7 +2,7 @@ tools:
 - name: bwa
   owner: devteam
   revisions:
-  - bd3a1e0de84c
+  - 546ada4a9f43
   tool_panel_section_label: 'Structural Variations'
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
   install_resolver_dependencies: True
@@ -30,7 +30,7 @@ tools:
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
   revisions:
-  - e519769cdb9c
+  - cb0147ade868
   tool_panel_section_label: 'Data Managers'
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: data_manager_twobit_builder
