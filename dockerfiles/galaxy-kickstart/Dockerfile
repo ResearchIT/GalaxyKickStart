@@ -33,9 +33,9 @@ RUN mkdir /etc/ssl/private-copy /var/lib/postgresql-copy && \
     chmod 0700 /var/lib/postgresql /etc/ssl/private && \
     chown -R 1550:1550 /var/lib/postgresql /var/run/postgresql \
     /var/log/postgresql /etc/ssl/private
-RUN chmod +x /setup/nss_passwd.sh && /setup/nss_passwd.sh
 RUN ansible-galaxy install -r requirements_roles.yml -p roles && \
     ansible-playbook -i inventory_files/docker -c local galaxy.yml
+RUN chmod +x /setup/nss_passwd.sh && /setup/nss_passwd.sh && chgrp -R 0 /etc/defaults && chmod -R g+rwX /etc/defaults
 
 ENV NGINX_GALAXY_LOCATION="" \
 GALAXY_CONFIG_ADMIN_USERS="admin@galaxy.org" \
