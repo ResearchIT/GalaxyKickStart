@@ -82,6 +82,17 @@
       become_user: "{{ galaxy_user_name }}"
       tags: install_tools
 
+  tasks:
+    - name: GALAXY_INSERT | fix permissions for openshift
+      file:
+        path: "{{item.name}}"
+        group: root
+        mode: "g+rwX"
+        state: "{{item.state}}"
+        recurse: yes
+      with_items:
+        - "/etc"
+
   post_tasks:
     - name: Clean apt cache to recover some disk space
       shell: apt-get clean
